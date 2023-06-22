@@ -1,0 +1,95 @@
+
+.App {
+  text-align: center;
+  color:red;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+/* body{
+  background-color: rgb(246, 255, 249);
+} */
+.container{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.photo-gallery{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:20px;
+}
+.pic{
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 3px lightgrey;
+  cursor: pointer;
+
+}
+.pic img{
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.pic::before{
+  content: "Album";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  z-index: 1;
+  translate: 0.3s;
+  transition-delay: 0.2s;
+
+}
+
+.id{
+  margin-top: 40px;
+  margin-bottom: 10px;
+} 
+.icon {
+  color: blue;
+}
+
+.icon:hover {
+  color: red;
+}
+.AddTask{
+  background-color: rgb(250, 243, 233);
+  border-color: bisque;
+}
+
+.card-header{
+  /* background-color: rgb(192, 133, 228); */
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 10px;
+ 
+  margin-top: 20px;
+} 
+.card-head2{
+  background-color: rgb(207, 242, 242);
+  padding-left: 15px;
+  padding-right: 15px;
+  color:blueviolet;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+} 
+.line{
+  border-style: 1px solid black;
+}
+
